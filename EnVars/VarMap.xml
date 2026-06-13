@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VarMap project="PDF-Size-Reducer" updated="2026-06-10">
+  <Var name="BUNDLED" value="hasattr(sys, '_MEIPASS')" usedIn="app.py" purpose="PyInstaller frozen exe detection"/>
+  <Var name="APP_DIR" value="sys._MEIPASS or script dir" usedIn="app.py" purpose="Base path for tools and gs"/>
+  <Var name="GS_DIR" value="APP_DIR/gs or tools/ghostscript" usedIn="app.py" purpose="Ghostscript search and download target"/>
+  <Var name="PRESETS" value="Ultra, Screen, eBook, Printer, Prepress, Default" usedIn="app.py,README.md" purpose="Compression preset labels"/>
+  <Var name="METHODS" value="gs_preset, gs_raster, pymupdf_raster" usedIn="app.py" purpose="Compression method ids"/>
+  <Var name="GS_DOWNLOAD_API" value="https://api.github.com/repos/ArtifexSoftware/ghostpdl-downloads/releases/latest" usedIn="app.py" purpose="One-click Ghostscript fetch"/>
+  <Var name="GITHUB_REPO" value="https://github.com/GatoGodMode/PDF-Size-Reducer" usedIn="README.md" purpose="Public repository URL"/>
+</VarMap>

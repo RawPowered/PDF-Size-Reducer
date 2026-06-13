@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SysMap project="PDF-Size-Reducer" updated="2026-06-10">
+  <Structure>
+    <File path="app.py" role="Tkinter GUI and compression engine">
+      <Module id="presets" purpose="PRESETS list: Ultra custom GS args + stock PDFSETTINGS"/>
+      <Module id="methods" purpose="METHODS: gs_preset, gs_raster, pymupdf_raster"/>
+      <Module id="ghostscript" purpose="find_ghostscript, run_ghostscript, run_ghostscript_raster, download_ghostscript"/>
+      <Module id="pymupdf" purpose="run_pymupdf_raster, ensure/install pymupdf"/>
+      <Module id="ui" purpose="App class: browse, compress, preview_sizes, dependency install buttons"/>
+    </File>
+    <File path="run.ps1" role="Windows venv launcher"/>
+    <File path="requirements.txt" role="Stdlib-only note; PyMuPDF installed on demand"/>
+    <File path="PDF_Size_Reducer.spec" role="PyInstaller spec; bundles gs/ into exe"/>
+    <Folder path="dist" role="Portable release artifacts">
+      <File path="dist/PDF_Size_Reducer.exe" role="Bundled Ghostscript + app"/>
+      <File path="dist/PDF_Size_Reducer.zip" role="Zipped portable build"/>
+    </Folder>
+    <Folder path="gs" role="Ghostscript runtime bundled for PyInstaller"/>
+    <Folder path="tools/ghostscript" role="Dev-mode Ghostscript install target"/>
+    <Folder path="build" role="PyInstaller build cache"/>
+    <Folder path="EnVars" role="Structural and variable maps only"/>
+  </Structure>
+  <Constraints>
+    <Rule>Ultra preset trades quality for size; document in README and UI hint.</Rule>
+    <Rule>Only keep if smaller must remain default for safe compression.</Rule>
+  </Constraints>
+</SysMap>

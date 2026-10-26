@@ -6,8 +6,8 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
   [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-  [![Windows](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows&logoColor=white)](https://github.com/GatoGodMode/PDF-Size-Reducer/releases)
-  [![Author](https://img.shields.io/badge/GitHub-GatoGodMode-181717?logo=github)](https://github.com/GatoGodMode)
+  [![Windows](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows&logoColor=white)](https://github.com/RawPowered/PDF-Size-Reducer/releases)
+  [![Author](https://img.shields.io/badge/GitHub-RawPowered-181717?logo=github)](https://github.com/RawPowered)
 
 </div>
 
@@ -19,7 +19,7 @@ Teams needed **50 MB PDFs compressed to ~2 MB** for email, portals, and storage 
 
 PDF Size Reducer is a **desktop GUI** that stacks every practical compression path in one place: Ghostscript presets (including a custom **Ultra** max-shrink profile), full-page rasterization, and a **Check Sizes** preview that runs all presets before you commit. Built for people who do day-to-day office work, not terminal power users.
 
-**Created by:** [Joseph Edwards (@GatoGodMode)](https://github.com/GatoGodMode) · MIT licensed
+**Created by:** [Joseph Edwards (@RawPowered)](https://github.com/RawPowered) · MIT licensed
 
 ---
 
@@ -46,7 +46,7 @@ Download from [`dist/PDF_Size_Reducer.exe`](dist/PDF_Size_Reducer.exe) or [`dist
 ### Python (dev / Linux)
 
 ```powershell
-git clone https://github.com/GatoGodMode/PDF-Size-Reducer.git
+git clone https://github.com/RawPowered/PDF-Size-Reducer.git
 cd PDF-Size-Reducer
 .\run.ps1
 ```
